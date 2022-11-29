@@ -7,7 +7,7 @@
 }
 :root{
     --color-font:#010F37;
-    --color-second:#0556A4;
+    --color-second:#194670;
     --color-medium:#53AFEC;
     --color-celest:#ccf4fe;
     --color-letter:#F0F6FD;
@@ -16,6 +16,8 @@ body{
     background-color:var(--color-font);
 }
 .header{
+    position: fixed;
+    width: 100%;
     background-color:var(--color-second);
     display: flex;
     align-items:center;
@@ -47,6 +49,7 @@ body{
     color: var(--color-letter);
 }
 .header--nav-list__item a:hover{
+    transition:.2s;
     font-size: 2.3em;
     color: var(--color-celest);
 }
@@ -74,13 +77,13 @@ body{
     background-color: var(--color-celest);
 }
 .main-home__target img {
-    height: 500px;
+    height:510px;
     border-radius: 30px 0 0 30px;
-    opacity: .9;
-}
+    /*opacity: .7;*/
+}/*
 .main-home__target:hover img{
-    opacity:1 ;
-}
+    opacity:.9 ;
+}*/
 .main-home__target--text{
     display: flex;
     height: auto;
@@ -110,6 +113,54 @@ body{
     background-color:#ffffff;
     border: 1px solid #000;
     text-transform: uppercase;
+}
+.main-home__target--text button:hover{
+    background-color: #eee;
+
+}
+.main-home hr {
+    width: 80%;
+    margin: auto;
+    height: .2px;
+}
+.trabajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:50px;
+    grid-template-rows:100px 100px;
+    grid-template-areas:    "aside aside aside aside"
+                            "item1 item2 item3 item4"
+                            "item5 item6 item7 item8" ;
+    width: 80%;
+    height: auto;
+    margin: 100px auto;
+}
+.trabajos aside {
+    margin: 10px 10px ;
+    grid-area: aside;
+}
+.trabajos aside p{
+    text-align: center;
+    font-size: larger;
+    font-size: 2em;
+    color: var(--color-letter);
+}
+
+.trabajo--items{
+    grid-area: item1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 0 30px 0 ;
+    text-align: center;
+    background-image: url(../recursos/batatabit.png);
+    background-size:contain;
+}
+.trabajo--items a {
+    height: 100%;
+    width: 100%;
+    font-size: 3em;
+    opacity: 0;
 }
 /* footer*/
 
