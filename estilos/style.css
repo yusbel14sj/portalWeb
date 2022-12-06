@@ -2,8 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 90%;
+    
     font-family: "Josefin Sans", sans-serif;
+}
+html{
+    font-size: 62%;
+
 }
 :root{
     --color-font:#010F37;
@@ -17,6 +21,7 @@ body{
 }
 .header{
     position: fixed;
+    top: 0;
     width: 100%;
     background-color:var(--color-second);
     display: flex;
@@ -27,7 +32,7 @@ body{
 }
 .header--icon{
     color: var(--color-letter);
-    font-size: 2.8em;
+    font-size: 3.5rem;
     text-decoration: none;
 }
 .header--nav-list {
@@ -57,53 +62,29 @@ body{
 /* main home*/
 .main-home__aside{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width:100%;
+    padding: 130px 0 100px 0;
     background-image: url(../recursos/panet3.jpg);
-
 }
 .main-home__aside h1{
-    margin: 0 0 0 0;
-    padding: 200px;
+    margin: auto;
     color: var(--color-letter);
-    font-size: 10em;
+    font-size: 7rem;
 }
 /*tarjeta de presentacion*/
 .main-home__target{
     display: flex;
-    width: 800px;
-    margin: 100px auto;
+    width: 80%;
+    margin: 50px auto;
     border-radius: 30px;
-    background-color: var(--color-celest);
-}
-.main-home__target img {
-    height:510px;
-    border-radius: 30px 0 0 30px;
-    /*opacity: .7;*/
 }/*
+.main-home__target img {
+    width: 50%;
+    border-radius: 30px 0 0 30px;
+    opacity: .7;
+}
 .main-home__target:hover img{
     opacity:.9 ;
-}*/
-.main-home__target--text{
-    display: flex;
-    height: auto;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-
-}
-.main-home__target--text h3 {
-    padding: 20px;
-    font-size: 3em;
-
-}
-
-.main-home__target--text p {
-    text-align: center;
-    font-size: 2em;
-    font-weight: lighter;
-    padding: 10px;
 }
 .main-home__target--text button{
     padding: 14px 20px 10px;
@@ -118,6 +99,25 @@ body{
     background-color: #eee;
 
 }
+.main-home__target--text{
+}*/
+
+.main-home__target--text h3 {
+    color:var(--color-celest);
+    width: max-content;
+    padding: 20px;
+    font-size: 3em;
+    border-bottom: 1px var(--color-celest) solid;
+    margin: 0 0 15px;
+}
+
+.main-home__target--text p {
+    text-align:start;
+    font-size: 2em;
+    color: var(--color-letter);
+    font-weight: lighter;
+    padding: 10px;
+}
 .main-home hr {
     width: 80%;
     margin: auto;
@@ -125,15 +125,15 @@ body{
 }
 .trabajos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4 , 1fr);
     gap:50px;
-    grid-template-rows:100px 100px;
+    grid-template-rows:auto 100px;
     grid-template-areas:    "aside aside aside aside"
                             "item1 item2 item3 item4"
                             "item5 item6 item7 item8" ;
     width: 80%;
     height: auto;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 .trabajos aside {
     margin: 10px 10px ;
@@ -141,8 +141,8 @@ body{
 }
 .trabajos aside p{
     text-align: center;
-    font-size: larger;
-    font-size: 2em;
+    font-weight: 300;
+    font-size: 3em;
     color: var(--color-letter);
 }
 
@@ -153,14 +153,17 @@ body{
     justify-content: center;
     border-radius: 30px 0 30px 0 ;
     text-align: center;
-    background-image: url(../recursos/batatabit.png);
-    background-size:contain;
+    background: linear-gradient(0deg, rgb(241, 174, 28) 11%, rgb(41, 34, 17) 100%);;
 }
 .trabajo--items a {
-    height: 100%;
-    width: 100%;
+    text-decoration: none;
+    color:#fff;
     font-size: 3em;
-    opacity: 0;
+
+}
+.trabajo--items:hover{
+    transition: .2s;
+    opacity: .8;
 }
 /* footer*/
 
