@@ -226,9 +226,6 @@ main {
     overscroll-behavior-x:contain ;
     scroll-snap-type: x proximity;
 }
-.main-commission-table {
-
-}
 .main-commission-table .commission-table--title {
 color: #4444ff;
 }
