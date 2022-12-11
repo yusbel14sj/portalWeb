@@ -222,7 +222,6 @@ main {
 }
 .main-table-container {
     display: flex;
-    overflow-x:scroll;
     overscroll-behavior-x:contain ;
     scroll-snap-type: x proximity;
 }
@@ -358,7 +357,7 @@ color: #4444ff;
 }
 .plans-container--slider {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overscroll-behavior-x: contain ;
     scroll-snap-type: x proximity;
 }
