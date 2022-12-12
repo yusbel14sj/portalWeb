@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    font-size: 62%;
+}
+
+body{
+    background: powderblue;
+}
+.article{
+    padding: 25px;
+    margin: 4% auto 25px auto;
+    min-width: 290px;
+    max-width: 300px;
+    display:block;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+
+
+}
+.article--img{
+    border-radius: 15px;
+    height: 250px;
+    margin: 0 auto 0 auto;
+}
+.article--h1{
+    margin: 15px auto 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 88%;
+}
+ .article--p{
+    margin: auto;
+    width: 77%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+ }

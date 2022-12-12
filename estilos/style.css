@@ -145,9 +145,13 @@ body{
     font-size: 3em;
     color: var(--color-letter);
 }
-
-.trabajo--items{
+.trabajo--item-batatabit{
     grid-area: item1;
+}
+.trabajo--item-proyectoQR{
+    grid-area: item2;
+}
+.trabajo--items{
     display: flex;
     align-items: center;
     justify-content: center;
